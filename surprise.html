@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special birthday surprise for Anya! 🎉">
+    <title>Surprise for Anya! 🎉</title>
+
+    <!-- Preconnect for better font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="parallax" role="img" aria-label="Birthday celebration background"></div>
+    
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    
+    <!-- Surprise Content -->
+    <div class="content surprise">
+        <h1 class="title">🎊 Surprise, Anya! 🎊</h1>
+        <p class="subtitle">You're an amazing person and deserve all the love today! 💖</p>
+        
+        <!-- Birthday Card -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p>Click to open your card! 💌</p>
+                </div>
+                <div class="card-back">
+                    <p>Happy Birthday, Anya! 🎂🥳</p>
+                    <img src="image/cat_character.png" alt="Cute Cat" class="cute-cat" loading="lazy">
+                    
+                    <!-- Arrow to reveal message -->
+                    <div class="arrow-container">
+                        <p class="arrow-text">Tap the arrow for more!</p>
+                        <button id="show-message" class="arrow-btn">⬆</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden Message -->
+        <div id="hidden-message" class="hidden-message">
+            <p>Dear Anya, 🎉✨</p>
+<p>Happy Birthday! 🥳🎂 Today is a special day because it’s the day an incredible person like you was born! From the moment I got to know you, I realized how full of life, energy, and kindness you are. You have this rare ability to brighten up the world around you, and that’s something truly special. 💖🌟</p>
+<p>I hope this year brings you even more joy, success, and unforgettable moments. May your dreams get closer, your heart feel lighter, and your days be filled with laughter and love! 😊💫 Remember, no matter what happens, you are strong, amazing, and capable of achieving anything you set your mind to!</p>
+<p>So today, celebrate yourself! 🎈🎁 Eat lots of cake 🍰, laugh until your stomach hurts 😂, and dance like nobody’s watching 💃🎶. Because you deserve every bit of happiness in the world!</p>
+<p>С Днём Рождения, моя дорогая Аня! Пусть этот год принесёт тебе всё, о чём ты мечтаешь! 💕✨</p>
+<p>with lots of love and the biggest smile,
+Fadli😁💙</p>
+        </div>
+
+        <a href="index.html" class="back-btn">⬅ Back to Main</a>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bgm" autoplay loop>
+        <source src="audio/bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

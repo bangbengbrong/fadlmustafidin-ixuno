@@ -1,0 +1,47 @@
+/* General Reset */
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+/* Body */ body { font-family: 'Pacifico', cursive; background: #FFC1C2; no-repeat center center fixed; background-size: 130%; background-position: center 30%; text-align: center; color: white; }
+
+/* Parallax Effect */ .parallax { background: url('image/3956067699660.png') no-repeat center center; background-size: 100%; height: 100vh; position: absolute;  top: 0; right: 0; bottom: 0; left: 0; transform: scale(1.5); }
+
+/* Content Section */ .content { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+/* Title & Subtitle */ .title { font-size: 3.2rem; color: #00BFFF; text-shadow: 4px 4px 12px rgba(0, 191, 255, 0.8); }
+
+.subtitle { font-size: 1.8rem; color: #0073E6; text-shadow: 2px 2px 8px rgba(0, 115, 230, 0.7); }
+
+/* Card */ .card { width: 270px; height: 370px; perspective: 1200px; margin: 20px auto; cursor: pointer; transition: transform 0.3s ease-in-out; }
+
+.card:hover { transform: scale(1.05); }
+
+.card-inner { width: 100%; height: 100%; transform-style: preserve-3d; transition: transform 0.7s ease-in-out; }
+
+.card.flipped .card-inner { transform: rotateY(180deg); }
+
+.card-front, .card-back { width: 100%; height: 100%; position: absolute; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; border-radius: 15px; box-shadow: 0 6px 12px rgba(0, 191, 255, 0.5); background: #fff; }
+
+.card-front { background: linear-gradient(135deg, #E6F7FF, #F0F8FF); font-size: 1.3rem; font-weight: bold; color: #333; }
+
+.card-back { background: linear-gradient(135deg, #00BFFF, #1E90FF); transform: rotateY(180deg); flex-direction: column; }
+
+.cute-cat { width: 230px; margin-top: 10px; }
+
+/* Arrow to Show More */ .arrow-container { margin-top: 15px; }
+
+.arrow-text { font-size: 1rem; color: white; text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7); }
+
+.arrow-btn { font-size: 1.8rem; background: none; border: none; color: white; cursor: pointer; animation: bounce 1.5s infinite; }
+
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+/* Hidden Message */ .hidden-message { display: none; font-size: 1.4rem; color: #fff; background: rgba(0, 0, 0, 0.7); padding: 15px; border-radius: 12px; margin-top: 20px; text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8); }
+
+/* Buttons */ .front-btn, .back-btn { display: inline-block; margin-top: 20px; padding: 14px 26px; text-decoration: none; font-size: 1.1rem; font-weight: bold; color: white; background: linear-gradient(135deg, #0073E6, #004080); border-radius: 10px; transition: all 0.3s ease-in-out; box-shadow: 0 0 12px rgba(0, 115, 230, 0.8); }
+
+.front-btn:hover, .back-btn:hover { background: linear-gradient(135deg, #005bb5, #003b8a); transform: scale(1.12); }
+
+/* Responsive Design */ @media (max-width: 600px) { .title { font-size: 2.6rem; } .subtitle { font-size: 1.4rem; } .card { width: 230px; height: 330px; } .cute-cat { width: 190px; } }
+
